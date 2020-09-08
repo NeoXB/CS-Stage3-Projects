@@ -1,0 +1,225 @@
+/*All*/
+
+html,
+body {
+    margin: 0;
+    overflow: auto;
+    background-color: paleturquoise;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/*Body*/
+
+section {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+h2 {
+    display: inline-block;
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+
+p {
+    padding: 10px;
+}
+
+
+/*Header*/
+
+#logo {
+    width: 250px;
+    height: 250px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+h1 {
+    color: white;
+    font: 5em sans-serif;
+    font-size: xx-large;
+    padding: 0px 10px;
+}
+
+.header {
+    width: 100%;
+    padding: .5em 0;
+    background: royalblue;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    padding: .5em 0;
+    background: turquoise;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav button {
+    display: inline-block;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid royalblue;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+#homeButton {
+    background-color: royalblue;
+}
+
+nav button:hover {
+    background-color: blue !important;
+    color: white;
+}
+
+nav button:active {
+    background-color: royalblue !important;
+    color: white;
+}
+
+
+/*Home*/
+
+#home {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+#mathematician {
+    width: 50%;
+    height: 50%;
+}
+
+#version {
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*Staff*/
+
+.staffProfile {
+    padding: 50px;
+    border-bottom: 5px solid black;
+}
+
+#staffPhoto {
+    width: 25%;
+    height: 25%;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
+    display: inline-block;
+}
+
+#email,
+#mobile,
+#phone {
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#email:hover,
+#mobile:hover,
+#phone:hover {
+    color: blue;
+}
+
+#email:active,
+#mobile:active,
+#phone:active {
+    color: red;
+}
+
+
+/*Course*/
+
+.viewCourse {
+    padding: 50px;
+    border-bottom: 5px solid black;
+}
+
+#timetableButton {
+    display: inline-block;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid royalblue;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#timetableButton:hover {
+    background-color: blue !important;
+    color: white !important;
+}
+
+#timetableButton:active {
+    background-color: royalblue !important;
+    color: white !important;
+}
+
+
+/*Timetable*/
+
+#viewTimetable {
+    padding: 50px;
+    border-bottom: 5px solid black;
+    align-content: center;
+    align-items: center;
+}
+
+#table {
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#table tr {
+    background-color: blue;
+    color: white;
+}
+
+#table tr:nth-of-type(even) {
+    background-color: royalblue;
+}
+
+#table th,
+#table td {
+    padding: 12px 15px;
+}
+
+
+/*Info*/
+
+#graph {
+    align-content: center;
+    align-items: center;
+}
+
+#data {
+    padding: 50px;
+}

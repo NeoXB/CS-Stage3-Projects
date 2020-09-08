@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="https://www.cs.auckland.ac.nz/courses/compsci335s2c/lectures/mano/qz/MathLogo.svg">
+    <title>Department of Mathematics</title>
+    <link rel="stylesheet" href="nton939.css">
+    <script defer="true" src="nton939.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="https://www.cs.auckland.ac.nz/courses/compsci335s2c/lectures/mano/qz/MathLogo.svg" alt="Dept. of Math Logo" id="logo">
+            <h1>Welcome to the Department of Mathematics</h1>
+        </div>
+
+        <nav>
+            <button class="button" id="homeButton" onclick="showPage('home','homeButton')">&#127968;</button>
+            <button class="button" id="staffButton" onclick="showPage('staff','staffButton'); getStaff('allStaff')">👨‍💼👩‍💼</button>
+            <button class="button" id="courseButton" onclick="showPage('course','courseButton'); getCourse('allCourse')">&#128214;</button>
+            <button class="button" id="infoButton" onclick="showPage('info','infoButton'); getInfo('graph','data')">&#9432;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>HOME</h2>
+            <p>Our department is one of the most diverse within the University, with our courses connecting a broad range of disciplines and faculties.</p>
+            <img src="https://ghanawebonline.com/wp-content/uploads/2019/08/giphy-13.gif" alt="A mathematician working" id="mathematician">
+            <p>We are located at:<br>38 Princes Street<br>Auckland, 1010<br>New Zealand</p>
+            <h5>&copy; 2020 by The University of Auckland. All Rights Reserved.</h5>
+            <h5>Version</h5>
+            <iframe src="http://localhost:8181/CorsProxyService.svc/version" id="version"></iframe>
+        </section>
+
+        <section id="staff">
+            <h2>OUR STAFF</h2>
+            <div id="allStaff"></div>
+        </section>
+
+        <section id="course">
+            <h2>OUR COURSES</h2>
+            <div id="allCourse"></div>
+        </section>
+
+        <section id="info">
+            <h2>INFOGRAPHICS</h2>
+            <div id="graph"></div>
+            <div id="data"></div>
+        </section>
+    </main>
+</body>
+
+</html>
