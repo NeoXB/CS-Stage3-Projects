@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-53 -3 606 506" id="Maths Department">
+    <mask id="circleMask">
+        <circle cx="250" cy="250" r="500" fill="white"/>
+        <circle cx="250" cy="300" r="121"/>
+    </mask>
+    <path d="M 31.2 426.2 A 252.55 252.55 0 1 1 468.8 426.2" fill="none" stroke="black" stroke-width="61" stroke-linecap="round"/>
+    <line x1="36" y1="86" x2="56" y2="106" stroke="black" stroke-width="61" stroke-linecap="round"/>
+    <line x1="464" y1="86" x2="444" y2="106" stroke="black" stroke-width="61" stroke-linecap="round"/>
+    <rect x="219.5" y="50" width="61" height="100"/>
+    <circle cx="250" cy="300" r="182" mask="url(#circleMask)"/>
+    <circle cx="250" cy="300" r="30.4"/>
+    <circle cx="257.5" cy="292.5" r="12.6" fill="white"/>
+</svg>
