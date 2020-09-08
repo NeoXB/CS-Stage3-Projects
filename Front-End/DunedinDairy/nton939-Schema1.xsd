@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="productList1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="countryType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Bulgaria"/>
+            <xs:enumeration value="Cyprus"/>
+            <xs:enumeration value="Denmark"/>
+            <xs:enumeration value="England"/>
+            <xs:enumeration value="France"/>
+            <xs:enumeration value="Greece"/>
+            <xs:enumeration value="Hungary"/>
+            <xs:enumeration value="Iceland"/>
+            <xs:enumeration value="India"/>
+            <xs:enumeration value="Italy"/>
+            <xs:enumeration value="Netherlands"/>
+            <xs:enumeration value="NZ"/>
+            <xs:enumeration value="Portugal"/>
+            <xs:enumeration value="Spain"/>
+            <xs:enumeration value="Sweden"/>
+            <xs:enumeration value="Switzerland"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="positiveDecimalType">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="itemType">
+        <xs:sequence>
+            <xs:element name="ItemId" type="xs:unsignedInt"/>
+            <xs:element name="Origin" type="countryType"/>
+            <xs:element name="Price" type="positiveDecimalType"/>
+            <xs:element name="Title" type="xs:string"/>
+            <xs:element name="Type" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="itemArrayType">
+        <xs:sequence>
+            <xs:element name="Item" type="itemType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="ArrayOfItem" type="itemArrayType"/>
+
+</xs:schema>

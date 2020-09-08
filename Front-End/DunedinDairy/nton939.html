@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="file:///F:/UOA/Compsci335/A2/nton939.svg">
+    <title>Dunedin Dairy</title>
+    <link rel="stylesheet" href="nton939.css">
+    <script src="nton939.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="http://redsox.uoa.auckland.ac.nz/ds/logo.svg" alt="Dunedin Dairy logo" id="logo">
+            <h1>Welcome to Dunedin Dairy!</h1>
+        </div>
+
+        <nav>
+            <button class="button" id="homeButton" onclick="showPage('home','homeButton')">&#127968; Home</button>
+            <button class="button" id="productButton" onclick="showPage('product','productButton'); getProduct('allProducts')">&#128722; Products</button>
+            <button class="button" id="locationButton" onclick="showPage('location','locationButton'); getLocation('locationInfo')">&#128204; Location</button>
+            <button class="button" id="newsButton" onclick="showPage('news','newsButton'); getNews('allNews')">&#128240; News</button>
+            <button class="button" id="guestButton" onclick="showPage('guest','guestButton')">&#128214; Guest Book</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Dunedin Dairy sells the best dairy products that Dunedin has to offer.<br> If you are not a local and you want to try our products, you can register yourself to order our products online.<br> Start browsing our amazing products now!</p>
+            <img src="https://cdn.dribbble.com/users/974337/screenshots/2396438/vaca_dribble.gif" alt="A cute cow" id="cow">
+            <h4>&copy; 2020 by Dunedin Dairy. All Rights Reserved.</h4>
+            <h5>Version</h5>
+            <iframe src="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/version" id="version"></iframe>
+        </section>
+
+        <section id="product">
+            <h2>Products</h2>
+            <input id="search" type="text" value="" placeholder="&#x1F50D; Search here..." onkeyup="getSearch('allProducts',value)">
+            <div id="allProducts"></div>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <img src="http://redsox.uoa.auckland.ac.nz/ds/map.png" alt="Dunedin Dairy map" id="map">
+            <div id="locationInfo"></div>
+        </section>
+
+        <section id="news">
+            <h2>News</h2>
+            <div id="allNews"></div>
+        </section>
+
+        <section id="guest">
+            <h2>Guest Book</h2>
+            <h3>What people have said about us!</h3>
+            <iframe src="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/htmlcomments" id='allComments'></iframe>
+            <h3>You can sign our guest book too!</h3>
+            <h5>Please be polite in the comments to make it enjoyable for everyone &#128591;</h5>
+            <div id="guestBook">
+                <p>Your name:</p>
+                <input id="name" type="text" value="" placeholder="&#129302; Bob the builder...">
+                <p>Your comments:</p>
+                <input id="comment" type="text" value="" placeholder="&#128221; I like this website...">
+                <input id="submitButton" type="submit" value="&#10148; Submit" onclick="postComment()">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

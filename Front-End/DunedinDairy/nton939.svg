@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="Dunedin Dairy">
+    <clipPath id="frame">
+        <rect x="15" y="15" width="470" height="470" />
+    </clipPath>
+
+    <clipPath id="dFrame">
+        <rect x="265.15" y="95" width="394.6" height="305" />
+    </clipPath>
+
+    <g clip-path="url(#dFrame)">
+        <g id="rightD">
+            <circle cx="340" cy="250" r="149.8" />
+            <rect x="240" y="100" width="95" height="300" />
+        </g>
+    </g>
+
+    <g id="rightDroplet">
+        <circle cx="365" cy="275" r="50" fill="white" />
+        <polygon points="321.5 250 410 253 365 150" fill="white" />
+        <line x1="324" y1="240" x2="312" y2="270" stroke="black" stroke-width="3" />
+    </g>
+    
+    <g clip-path="url(#frame)">
+        <g id="topBar">
+            <rect x="0" y="0" width="500" height="64.5" />
+        </g>
+
+        <g id="bottomBar">
+            <rect x="0" y="435.5" width="500" height="64.5" />  
+        </g>
+    </g>
+
+    <g id="leftD">
+        <circle cx="90" cy="250" r="149.8" />
+        <rect x="10" y="100" width="75" height="300" />
+        <rect x="-70" y="75" width="84.8" height="350" fill="white" />
+    </g>
+
+    <g id="leftDroplet">
+        <circle cx="115" cy="275" r="50" fill="white" />
+        <polygon points="71.5 250 158.5 250 115 150" fill="white" />
+        <line x1="74" y1="240" x2="62" y2="270" stroke="black" stroke-width="3" />
+    </g>
+</svg>
